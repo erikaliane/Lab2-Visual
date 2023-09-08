@@ -8,9 +8,16 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
+        <StackPanel Margin="40">
 
-        <Button />
+            <TextBox x:Name="txtUsername" Height="30" Width="200"   />
+            <StackPanel Margin="15">
+                <PasswordBox x:Name="txtContra"   Height="30" Width="200"  />
+               </StackPanel>
+            <Button  Content="Iniciar Sesión" Height="30" Width="200"  Background="Green" Click="Button_Click"/>
+        </StackPanel>
 
-      
+     
+
     </Grid>
 </Window>

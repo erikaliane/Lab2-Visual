@@ -24,5 +24,31 @@ namespace Laboratorio2
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            string user = txtUsername.Text;
+            string contra = txtContra.Password;
+           
+            if (user == "Erika" && contra ==  "12345") {
+
+                Window1 window = new Window1();
+                this.Close();
+                window.Show();
+
+            }
+            else {
+
+                MessageBox.Show("Usuario Incorrecto");
+            }
+          
+
+
+
+
+
+
+
+        }
     }
 }
